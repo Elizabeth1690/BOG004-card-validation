@@ -5,8 +5,91 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+    <header>
+    <h2>Bienvenid@ a almacenes</h2>
+  </header>
+  
   <body>
-    <header></header>
+    <div id="datoscomprador">
+      <div id="subtitulocomprador">
+        <h2>Datos del comprador</h2>
+      </div>
+      <div id="formulariocomprador">
+        <form>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name"></br>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email"></br>
+          <label for="phone">Teléfono</label>
+          <input type="text" id="phone" name="phone"></br>
+          <label for="direction">Dirección</label>
+          <input type="text" id="direction" name="direction"></br>
+          <label for="city">Ciudad</label>
+          <input type="text" id="city" name="city"></br></br>
+          <input type="button" name="btn" value="Guardar" onclick="ClicEnviar()">
+          </br>
+          <p id="Guardar" style="display:None"></p>
+        </form>
+      </div>
+    </div>
+    <div id="datostarjeta">
+      <div id="subtitulotarjeta">
+        <h2>Datos de tarjeta</h2>
+      </div>
+  
+      <form>
+        <div class="container_answers">
+          <input type="radio" id="answer_1" name="franquicia">
+          <input type="radio" id="answer_2" name="franquicia">
+          <input type="radio" id="answer_3" name="franquicia">
+          <input type="radio" id="answer_1" name="franquicia">
+        </div></br>
+  
+        <div id="formulariovalidartarjeta">
+          <label for="cardnumber">Número de tarjeta</label>
+          <input type="text" id="cardnumber" name="cardnumber" placeholder="Ingresa # tarjeta"></br>
+          <input type="button" name="btn1" value="Validar" onclick="CliCllenarVector()">
+          <p id="validar" style="display:None"></p>
+        </div></br>
+  
+        <!--<input type="text" id="cuotas" name="cuotas" placeholder="¿En cuántas cuotas deseas pagar?" disabled>-->
+  
+        <div id="formulariotarjeta"></div>
+        <select class="" name="cuotas">
+          <option value="">¿En cuántas cuotas deseas pagar?</option>
+          <option value="">1 cuota</option>
+          <option value="">2 cuotas</option>
+          <option value="">3 cuotas</option>
+          <option value="">4 cuotas</option>
+          <option value="">6 cuotas</option>
+          <option value="">7 cuotas</option>
+          <option value="">8 cuotas</option>
+          <option value="">9 cuotas</option>
+          <option value="">10 cuotas</option>
+          <option value="">11 cuotas</option>
+          <option value="">12 cuotas</option>
+          <option value="">24 cuotas</option>
+          <option value="">36 cuotas</option>
+          <option value="">48 cuotas</option>
+        </select></br>
+        </br>
+        <label for="namecard">Nombre y Apellido como figura en la tarjeta</label></br>
+        <input type="number" id="namecard" name="namecard"></br>
+        <label for="Expirationdate">Fecha de vencimiento</label></br>
+        <input type="text" id="Expirationdate" name="Expirationdate"></br>
+        <label for="securitycode">Código de seguridad</label></br>
+        <input type="text" id="securitycode" name="securitycode"></br></br>
+        <input type="button" name="btn2" value="Pagar" onclick="ClicPagar()">
+        <p id="pagar" style="display:None"></p>
+      </form>
+    </div>
+    </div>
+  
+
+
+
+    
     <main></main>
     <footer></footer>
     <script src="index.js" type="module"></script>
