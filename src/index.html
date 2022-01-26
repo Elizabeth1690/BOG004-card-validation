@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-    <header>
-    <h2>Bienvenid@ a almacenes</h2>
-  </header>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
-    <div id="datoscomprador">
-      <div id="subtitulocomprador">
-        <h2>Datos del comprador</h2>
-      </div>
-      <div id="formulariocomprador">
-        <!--<form>
+<header>
+  <h2>Bienvenid@ a almacenes</h2>
+</header>
+
+<body>
+  <div id="datoscomprador">
+    <div id="subtitulocomprador">
+      <h2>Datos del comprador</h2>
+    </div>
+    <div id="formulariocomprador">
+      <!--<form>
           <label for="name">Nombre</label>
           <input type="text" id="name" name="name"></br>
           <label for="email">Email</label>
@@ -28,71 +29,70 @@
           <label for="city">Ciudad</label>
           <input type="text" id="city" name="city">-->
 
-          <form>
-            <label>Nombre
-             <input type="text" name="name">
-            </label></br>
-            <label for="email">Email
-             <input type="text" name="email">
-            </label></br>
-            <label for="phone">Teléfono
-             <input type="text" name="phone">
-            </label></br>
-            <label for="direction">Dirección
-            <input type="text" name="direction">
-            </label></br>
-            <label for="city">Ciudad
-             <input type="text" name="city">
-            </label></br></br>
-            <input type="button" name="btn" value="Guardar" onclick="ClicEnviar()">
-            </br></br>
-            <p id="Guardar" style="display:None"></p>
-          </form>
-      </div>
-    </div>
-    <div id="datostarjeta">
-      <div id="subtitulotarjeta">
-        <h2>Datos de tarjeta</h2>
-      </div>
-
       <form>
-        <div id="formulariovalidartarjeta">
-          <!--<label for="cardnumber">Número de tarjeta</label>
+        <label>Nombre
+          <input type="text" name="name">
+        </label></br>
+        <label for="email">Email
+          <input type="text" name="email">
+        </label></br>
+        <label for="phone">Teléfono
+          <input type="text" name="phone">
+        </label></br>
+        <label for="direction">Dirección
+          <input type="text" name="direction">
+        </label></br>
+        <label for="city">Ciudad
+          <input type="text" name="city">
+        </label></br></br>
+        <input type="button" name="btn" value="Guardar" onclick="ClicEnviar()">
+        </br></br>
+        <p id="Guardar" style="display:None"></p>
+      </form>
+    </div>
+  </div>
+  <div id="datostarjeta">
+    <div id="subtitulotarjeta">
+      <h2>Datos de tarjeta</h2>
+    </div>
+
+    <form>
+      <div id="formulariovalidartarjeta">
+        <!--<label for="cardnumber">Número de tarjeta</label>
           <input type="text" id="cardnumber" name="cardnumber" placeholder="Ingresa # tarjeta">-->
         <label>Número de tarjeta
-          <input type="text" name="cardnumber" placeholder="Ingresa número de tarjeta">
+          <input type="text" id="cardnumber" name="cardnumber" placeholder="Ingresa número de tarjeta">
         </label>
         </br>
-        <input type="button" name="btn1" value="Validar" onclick="CliCllenarVector()">
-         <p id="validar" style="display:None"></p>
-        </div></br>
-        <div class="container_answers">
-          <input type="radio" id="answer_1" name="franquicia">
-          <input type="radio" id="answer_2" name="franquicia">
-          <input type="radio" id="answer_3" name="franquicia">
-          <input type="radio" id="answer_1" name="franquicia">
-        </div></br>
+        <input type="button" id="validate" name="btn1" value="Validar">
+      </div></br>
+      <div class="container_answers">
+        <input type="radio" id="answer_1" name="franquicia">
+        <input type="radio" id="answer_2" name="franquicia">
+        <input type="radio" id="answer_3" name="franquicia">
+        <input type="radio" id="answer_1" name="franquicia">
+      </div></br>
 
-        <!--<input type="text" id="cuotas" name="cuotas" placeholder="¿En cuántas cuotas deseas pagar?" disabled>-->
+      <!--<input type="text" id="cuotas" name="cuotas" placeholder="¿En cuántas cuotas deseas pagar?" disabled>-->
 
-        <div id="formulariotarjeta">
+      <div id="formulariotarjeta">
         <!--<select class="" name="cuotas">-->
-        <input list="browsers" id="myBrowser" name="myBrowser" placeholder="Número de cuotas"/>
+        <input list="browsers" id="myBrowser" name="myBrowser" placeholder="Número de cuotas" />
         <datalist id="browsers">
-         <option value="1 cuota"></option>
-         <option value="2 cuotas"></option>
-         <option value="3 cuotas"></option>
-         <option value="4 cuotas"></option>
-         <option value="5 cuotas"></option>
-         <option value="6 cuotas"></option>
-         <option value="7 cuotas"></option>
-         <option value="8 cuotas"></option>
-         <option value="9 cuotas"></option>
-         <option value="10 cuotas"></option>
-         <option value="11 cuotas"></option>
-         <option value="12 cuotas"></option>
-         <option value="24 cuotas"></option>
-         <option value="36 cuotas"></option>
+          <option value="1 cuota"></option>
+          <option value="2 cuotas"></option>
+          <option value="3 cuotas"></option>
+          <option value="4 cuotas"></option>
+          <option value="5 cuotas"></option>
+          <option value="6 cuotas"></option>
+          <option value="7 cuotas"></option>
+          <option value="8 cuotas"></option>
+          <option value="9 cuotas"></option>
+          <option value="10 cuotas"></option>
+          <option value="11 cuotas"></option>
+          <option value="12 cuotas"></option>
+          <option value="24 cuotas"></option>
+          <option value="36 cuotas"></option>
         </datalist>
         <!--</select>-->
         </br>
@@ -110,23 +110,24 @@
 
 
         <label>Nombre y Apellido como figura en la tarjeta </br>
-        <input type="text" name="namecard">
-      </label></br></br>
+          <input type="text" name="namecard">
+        </label></br></br>
         <label>Fecha de vencimiento</br>
-         <input type="month" name="Expirationdate" min="2022-01" max=""required>
-         </label></br>
+          <input type="month" name="Expirationdate" min="2022-01" max="" required>
+        </label></br>
         <label>Código de seguridad</br>
-         <input type="number" name="securitycode" size="4" min="0000" max="9999" required>
+          <input type="number" name="securitycode" size="4" min="0000" max="9999" required>
         </label></br></br>
         <input type="button" name="btn2" value="Pagar" onclick="ClicPagar()">
         <p id="pagar" style="display:None"></p>
-      </form>
-    </div>
-    </div>
+    </form>
+  </div>
+  </div>
 
 
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+  <main></main>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

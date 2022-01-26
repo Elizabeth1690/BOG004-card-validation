@@ -10,10 +10,11 @@ function ClifillArray() {
 
   for (let i = 0; i <= arrayInput.length; i++) {
     if (i % 2 == 0) {
-      let pares = arrayInput.push(i);
+      let pares = i * 2;
+      //arrayInput.push(pares);
       console.log("los números pares son:" + pares);
     } else {
-      console.log("los números impares son:" + arrayInput);
+      //console.log("los números impares son:" + arrayInput[i]);
     }
   }
 }
