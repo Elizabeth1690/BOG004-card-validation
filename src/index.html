@@ -8,7 +8,11 @@
 </head>
 
 <header>
-  <h2>Bienvenid@ a almacenes</h2>
+  <div class="titulo">
+    <h1>Bienvenid@ a almacenes</h1>
+    <img src="https://i.imgur.com/i1JPwqm.jpg">
+  </div></br></br></br></br>
+  <div id="linea"></div></br>
 </header>
 
 <body>
@@ -21,7 +25,7 @@
           <input type=" text" id=nombre name="name">
         </label>
       </div>
-      <div class="infocomprador  "><label>Email
+      <div class="infocomprador "><label>Email
           <input type="text" name="email">
         </label>
       </div>
@@ -41,25 +45,21 @@
       <input type="button" id="save" name="btn" value="Guardar">
   </div>
   </br></br>
-  </form>
+  </form class="form1">
   <div id="datostarjeta">
     <div id="subtitulotarjeta">
-      <h2>Datos de tarjeta</h2>
+      <h3>Datos de tarjeta</h3>
     </div></br></br>
     <form>
-      <div>
+      <div class="infotarjeta">
+        <img src="https://i.imgur.com/EVGwFWU.png">
         <label>Número de tarjeta
-          <input type="text" id="cardnumber" name="cardnumber" placeholder="Ingresa número de tarjeta">
+          <input type="text" id="cardnumber" class="numtarjeta" name="cardnumber"
+            placeholder="Ingresa número de tarjeta">
         </label>
       </div></br>
-      <input type="button" id="validate" name="btn1" value="Validar"></br></br>
-      <div class="container_answers">
-        <input type="radio" id="answer_1" name="franquicia">
-        <input type="radio" id="answer_2" name="franquicia">
-        <input type="radio" id="answer_3" name="franquicia">
-        <input type="radio" id="answer_1" name="franquicia">
-      </div></br>
-      <div id="formulariotarjeta">
+      <input type="button" id="validate" class="validar" name="btn1" value="Validar"></br></br></br>
+      <div id="formulariotarjeta" class="infotarjeta">
         <input list="browsers" id="myBrowser" name="myBrowser" placeholder="Número de cuotas" />
         <datalist id="browsers">
           <option value="1 cuota"></option>
@@ -79,24 +79,25 @@
         </datalist>
       </div>
       </br>
-      </br>
-      <div>
-        <label>Nombre y Apellido como figura en la tarjeta </br>
+      <div class="infotarjeta">
+        <label>Nombre y Apellido como figura en la tarjeta
           <input type="text" name="namecard">
         </label>
       </div>
-      <div>
-        <label>Fecha de vencimiento</br>
+      </br>
+      <div class="infotarjeta">
+        <label>Fecha de vencimiento
           <input type="month" name="Expirationdate" min="2022-01" max="" required>
         </label>
       </div>
-      <div>
+      </br>
+      <div class="infotarjeta">
         <label>Código de seguridad
           <input type="number" name="securitycode" size="4" min="0000" max="9999" required>
         </label>
       </div>
       <div>
-        <input type="button" name="btn2" value="Pagar">
+        <input type="button" name="btn2" class="pagar" value="Pagar">
       </div>
   </div>
   </form>

@@ -1,5 +1,6 @@
 const validator = {
   maskify: function (arrayInput) {
+    console.log(typeof arrayInput);
     const ultimoscuatrosnumeros = arrayInput.substr(-4);
     const primerosNumerosTarjeta = arrayInput
       .substr(1, arrayInput.length - 5)
